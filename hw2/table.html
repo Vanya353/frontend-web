@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .menu{
+        background-color: red;
+      }
+      .table_site{
+        width: 300px;
+        height:300px;
+      }
+      .color_logo{
+        background-color: yellow;
+      }
+      .color_news{
+        background-color: yellowgreen;
+      }
+      .color_navigation{
+        background-color: orange;
+      }
+    </style>
+</head>
+<body>
+  <table class="table_site"border="2">
+    <tr>
+      <th class="color_logo">Logo</th>
+      <th class="menu" colspan="3">Menu</th>
+    </tr>
+    <tr>
+      <td class="color_news">news feed</td>
+      <td class="color_logo">list of something</td>
+      <td rowspan="2" class="color_navigation">navigation bar</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="color_logo">foot</td>
+    </tr>
+    </table>
+</body>
+</html>
