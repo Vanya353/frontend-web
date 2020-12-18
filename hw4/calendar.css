@@ -1,0 +1,240 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+button{
+    background: none;
+    border: none;
+}
+@font-face{
+    font-family: 'Roboto'; /* Имя шрифта */
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Путь к файлу со шрифтом */
+   }
+.main__wrapper{
+    width: 50%;
+}
+/* first block */
+.wrapper{
+    padding-top: 83px;
+    padding-left: 142px; 
+    min-height: 133px;
+    width: 100%   
+}
+.view-day{
+    width: 100%;
+    min-height: 133px;
+    border-bottom: 2px solid #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.view-day__date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #243D6F;
+}
+
+.view-day-search__img{
+    width: 37px;
+    height: 37px;
+    margin-right: 20px;
+}
+.view-day__layout img{
+    width: 36px;
+    height: 36px;
+}
+            /* List */
+.main_list{
+    padding-top: 90px;
+}
+.main_list__list-dates{
+    height:120px;
+    width: calc(100%-135px);
+    margin-left: 135px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #F3F3F3;
+    position: relative;
+}
+.list-dates__element{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #A4B0C3;
+
+    position: absolute;
+    transform: translateY(-50%);
+    top: 0;
+    left: -135px;
+}
+.list-dates__text{
+    position: absolute;
+    width: 100%;
+    border-left: 6px solid #8576ED;;
+    top: 0;
+    left: 0;
+    background: rgba(133, 118, 237, 0.15);
+    border-color:#3D83F9;
+
+    display:flex;
+    align-items: center;
+    padding-left: 75px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #243D6F;
+}
+.list-dates-text__style-meet{
+    background-color: rgba(133, 118, 237, 0.15);
+}
+.list-dates-text__style-studio{
+    background-color:rgba(61, 131, 249, 0.15);
+   
+}
+.list-dates-text__style-design{
+    background-color: rgba(238, 165, 124, 0.15);
+    border-left: 6px #EEA57C solid;
+}
+                /* aside */
+.aside{
+    /* width:35%; */
+    width: 40%;
+    background: rgba(42, 46, 65, 0.7);
+    min-height: 200px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top:83px;
+}
+.aside-wrapper{
+    padding: 81px 101px 81px 102px;
+}
+.aside-date{
+    display: flex;
+    justify-content: space-between;
+}
+.aside-date__text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    width:320px;
+}
+.aside-date__img{
+    width: 18px;
+    height: 36px;
+}
+
+.aside-top-line{
+    display: block;
+    height: 2px;
+    margin-top: 85px;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+}
+
+        /* list with days 0f the week */
+.aside-date__list{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.aside-date-week{
+    width: 86px;
+    text-align: center;
+}
+.aside-date-week__link{
+    font-size: 26px;
+    line-height: 30px;
+    text-align: left;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+            /* main__list */
+.aside__main-list{
+    margin-top: 45px;
+}
+.aside__main-list__element{
+    display: flex;
+}
+.aside__main-list__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 86px;
+    font-size: 29px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: left;
+}
+.aside__main-list__link:hover{
+    border-radius: 60em;
+    background-color: #3C82F9;
+}
+.aside__main-list__link__opasity-style{
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+/* 3 колоночки в конце */
+.aside__categories{
+    margin-top: 109px;
+    font-size: 26px;
+    line-height: 30px;
+}
+.aside-wrapper__categories{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 42px;
+
+}
+.aside__general-style-class{
+    flex-basis: 46%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 22px;
+    line-height: 26px;
+    position: relative;
+}
+.aside-wrapper__categories__finance{
+    background-color:#8576ED;
+    margin: 0 30px 30px 0;
+}
+.aside-wrapper__categories__management{
+    background-color: #F39946;
+}
+.aside-wrapper__categories__design{
+    background-color: #FF467E;
+}
+/* .just_link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: center;
+} */
