@@ -23,7 +23,7 @@ button{
     font-family: 'Roboto'; /* Имя шрифта */
     src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Путь к файлу со шрифтом */
    }
-.main__wrapper{
+.main-wrapper{
     width: 50%;
 }
 /* first block */
@@ -207,9 +207,10 @@ button{
     margin-top: 42px;
 
 }
+
 .aside__general-style-class{
     flex-basis: 46%;
-    height: 80px;
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,13 +220,14 @@ button{
 }
 .aside-wrapper__categories__finance{
     background-color:#8576ED;
-    margin: 0 30px 30px 0;
 }
 .aside-wrapper__categories__management{
     background-color: #F39946;
+    margin-left: 25px;
 }
 .aside-wrapper__categories__design{
     background-color: #FF467E;
+    margin-top: 25px;
 }
 /* .just_link{
     display: block;
