@@ -1,14 +1,10 @@
-function ChooseNumber(){
-    let userChoice = prompt("Введите число",0);
-    if (userChoice>0){
-        let result = userChoice * -1;
-        alert(result);
-    }if(userChoice<0){
-        let result = userChoice * -1 * -1;
-        alert(result);
+function makeNegative(num) {
+    if (num>0){
+      num = num * -1;
+    }if(num<0){
+      num = num * -1 * -1;
     }else{
-        alert(0)
+        console.log(0)
     }
-
+  return num
     }
-    ChooseNumber()

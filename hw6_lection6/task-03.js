@@ -1,9 +1,12 @@
-let name = prompt("Who are you?")
-        switch (name) {
-        case "user":
-            alert( 'MY GREETINGS' );
-            break;
-        case "Johny":
-            alert("Hello my kitty")
-            break;
-        }
+function greet(name){
+    let a =["Jim","Jane","Simon"];
+    for (let i = 0; i < 3; i++){
+      if (name === a[i]){
+        return `Hello, ${name}!`
+      }
+    }
+    if (name="Johny"){
+      return "Hello, my love!"
+    }
+  }
+  

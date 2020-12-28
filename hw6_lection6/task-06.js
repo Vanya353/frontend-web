@@ -1,13 +1,16 @@
-function order(){
-    let arenda = prompt("на сколько времени арендуем автомобиль");
+function rentalCarCost(d) {
+    // Your solution here
     let price = 40;
-    let total = arenda * price;
-    if (arenda >= 7){
-        alert(total - 50);
-    } else if (arenda >= 3){
-        alert(total - 20);
-        }else{
-        alert(total)
-        }
-    }
-    order()
+    let total = d * price;
+    if (d >= 7){
+      total = total - 50;
+      return total;
+      } else if (d >= 3){
+          total= total - 20;
+        return total
+          }else{
+          return total
+          }
+      }
+  
+   

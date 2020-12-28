@@ -1,10 +1,9 @@
-function res(){
-    let firstNum = prompt("Введите число",0);
-    let result = firstNum%2;
-    if(result==0){
-        alert("Четное");
-    }else{
-        alert("Не четное")
+function even_or_odd(number) {
+    let result = number % 2;
+    if(result===0){
+        return "Even";
     }
+  else{
+        return "Odd";
     }
-    res()
+}
